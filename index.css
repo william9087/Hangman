@@ -1,0 +1,401 @@
+body {
+  background-color: rgb(21, 14, 14);
+}
+
+#index_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 65vw;
+  z-index: -3;
+}
+
+#game_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vh;
+  width: 100vw;
+  z-index: -3;
+}
+
+#gallow {
+  z-index: -2;
+  position: absolute;
+  top: 62%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Eater", serif;
+  font-style: normal;
+  z-index: 2;
+  color: #ffffff;
+}
+
+#name {
+  text-align: center;
+  margin-top: 9%;
+  font-size: 55px;
+  color: #ffffff;
+  font-family: "Eater";
+}
+
+#name1 {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 55px;
+  color: #ffffff;
+}
+
+.button a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  font-size: 21px;
+}
+
+#easy_mode {
+  margin-top: 3%;
+  width: 1%;
+  margin-left: 47%;
+}
+
+#medium_mode {
+  width: 1%;
+  margin-left: 47%;
+}
+
+#hard_mode {
+  width: 1%;
+  margin-left: 47%;
+}
+
+#back {
+  transition: color 0.4s ease;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 19%;
+  margin-top: 8%;
+  transition: color 0.4s ease;
+  z-index: 5;
+}
+
+#switch_mode {
+  position: absolute;
+  transition: color 0.4s ease;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 80%;
+  margin-top: 7.7%;
+  transition: color 0.4s ease;
+  z-index: 5;
+  top: 74%;
+  font-family: "Nosifer", sans-serif;
+}
+
+#game_back {
+  position: absolute;
+  text-decoration: none;
+  font-size: 22px;
+  transition: color 0.4s ease;
+  color: #ffffff;
+  margin-top: 38%;
+  margin-left: 3%;
+  z-index: 5;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Nosifer", sans-serif;
+}
+
+#switch_mode:hover {
+  color: red;
+}
+
+#game_back:hover {
+  color: red;
+  font-family: "Nosifer", sans-serif;
+}
+
+#back:hover {
+  color: red;
+}
+
+.button a:hover {
+  color: #ff0000;
+}
+
+#play_button {
+  text-align: center;
+  margin-top: 11%;
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+#play_button:hover {
+  color: #ff0000;
+}
+
+#instruction_button {
+  text-align: center;
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  margin-top: -31%;
+}
+
+#instruction_button:hover {
+  color: #ff0000;
+}
+
+a {
+  display: block;
+}
+
+#text {
+  position: absolute;
+  color: #ffffff;
+  z-index: 10;
+  font-family: "Nosifer", sans-serif;
+  font-style: normal;
+  right: 18%;
+  top: 84%;
+}
+
+#instruction {
+  margin: auto;
+  text-align: center;
+  font-family: "Eater";
+  width: 26vw;
+}
+
+@font-face {
+  font-family: "Butcherman";
+  src: url("fonts/Butcherman-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nosifer";
+  src: url("fonts/Nosifer-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Eater";
+  src: url("fonts/Eater-Regular.ttf");
+}
+
+.controls-container {
+  float: right;
+  width: 300px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.controls {
+  display: inline-block;
+}
+
+#gallow {
+  width: 40%;
+}
+
+#won {
+  position: absolute;
+  color: darkgreen;
+  font-size: 30px;
+  margin-top: 11%;
+  margin-left: 40%;
+  font-family: "Nosifer", sans-serif;
+}
+
+#lost {
+  position: absolute;
+  color: darkred;
+  font-size: 30px;
+  margin-top: 13%;
+  margin-left: 40%;
+  z-index: 3;
+  font-family: "Nosifer", sans-serif;
+}
+
+#letters1 {
+  padding: 20px;
+  color: #fcf8e3;
+  z-index: 5;
+  width: 50%;
+  margin-left: 42%;
+  margin-top: 5%;
+}
+
+#letters2 {
+  padding: 20px;
+  color: #fcf8e3;
+  z-index: 5;
+  width: 50%;
+  margin-left: 37%;
+  margin-top: 5%;
+}
+
+#letters3 {
+  padding: 20px;
+  color: #fcf8e3;
+  z-index: 5;
+  width: 50%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+#keyboard {
+  float: right;
+  display: inline;
+  vertical-align: top;
+  margin-right: 5%;
+  margin-top: 28%;
+  width: 15%;
+}
+
+#restart {
+  float: right;
+}
+
+#signup_button {
+  text-align: center;
+  margin-bottom: 31%;
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+#signup_button:hover {
+  color: #ff0000;
+}
+
+fieldset {
+  background-color: rgba(33, 19, 19, 0.532);
+  border: 2px outset rgb(254, 254, 254);
+  border-radius: 10px;
+  width: 40%;
+  margin: 20% auto 0;
+  text-align: center;
+  padding: 20px;
+}
+
+legend {
+  background-color: white;
+  border: 2px outset gray;
+  padding: 0.2em;
+  font-family: "Eater";
+}
+
+input[type="text"],
+#input_name {
+  width: 80%;
+  padding: 8px;
+  margin-top: 10px;
+  height: 30px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: Arial, serif;
+}
+
+input[type="submit"] {
+  background-color: rgb(181, 31, 31);
+  font-size: 120%;
+  font-weight: bold;
+  font-family: "Eater";
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+label[for="name"] {
+  font-weight: bold;
+  color: rgb(181, 31, 31);
+  font-family: "Eater", sans-serif;
+}
+
+.greeting {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Eater";
+  font-size: 8px;
+  margin-top: 7%;
+  margin-bottom: 35%;
+}
+
+#greeting {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Eater";
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.signup-submit {
+  text-align: center;
+}
+
+#welcome {
+  text-align: center;
+  color: white;
+  font-family: "Nosifer", sans-serif;
+  margin-top: 23%;
+}
+
+#newuser_signup {
+  margin-bottom: 8%;
+}
+
+#error_exist {
+  text-align: center;
+  font-size: 10px;
+}
+
+/* Center the leaderboard container */
+.leaderboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+/* Change text color to white */
+.leaderboard-container table {
+  color: black;
+}
+
+/* Make the font bigger */
+.leaderboard-container table th,
+.leaderboard-container table td {
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+#leaderboard {
+  text-decoration: none;
+  color: white;
+  font-family: "Nosifer", sans-serif;
+  font-size: 23px;
+  transition: color 0.6s ease;
+  width: 18%;
+  margin-left: 43%;
+  margin-top: 31.5%;
+}
+
+#leaderboard:hover {
+  color: red;
+}

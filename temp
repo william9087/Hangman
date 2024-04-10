@@ -1,0 +1,65 @@
+<?php
+    // Check if the username is set in the session
+    if (isset($_SESSION['username'])) {
+        // Get the username
+        $username = $_SESSION['username'];
+
+        // Check if the game is won
+        if ($WON) {
+            $score = 50; // Example score for winning, replace with desired score
+        } else {
+            $score = 10; // Default score for playing, replace with desired score
+        }
+
+        // Update the scoreboard with the user's score
+        updateScoreboard($username, $score);
+    }
+
+    // Function to update the scoreboard
+    function updateScoreboard($username, $score)
+    {
+        // Check if the scoreboard exists in the session
+        if (!isset($_SESSION['scoreboard'])) {
+            $_SESSION['scoreboard'] = []; // Initialize scoreboard if not already set
+        }
+
+        // Check if the user already exists in the scoreboard
+        if (isset($_SESSION['scoreboard'][$username])) {
+            // If the user exists, update their score
+            $_SESSION['scoreboard'][$username] += $score;
+        } else {
+            // If the user doesn't exist, add them to the scoreboard
+            $_SESSION['scoreboard'][$username] = $score;
+        }
+    }
+
+    function displayScoreboard($scoreboard)
+    {
+        echo "<h2>Scoreboard</h2>";
+        echo "<table border='1'>";
+        echo "<tr><th>Name</th><th>Score</th></tr>";
+        foreach ($scoreboard as $name => $score) {
+            echo "<tr><td>$name</td><td>$score</td></tr>";
+        }
+        echo "</table>";
+    }
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman The Game</title>
+</head>
+
+<body bgcolor="white">
+
+    <?php
+    // Display scoreboard
+    displayScoreboard($scoreBoard);
+    ?>
+</body>
+
+<html>
